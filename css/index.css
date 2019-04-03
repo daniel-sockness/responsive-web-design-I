@@ -220,3 +220,47 @@ div.info-facts {
 ul {
 	margin-top: 5%;
 }
+
+.logo-mobile {
+	display: none;
+}
+
+@media(max-width: 800px) {
+    header nav {
+		flex-wrap: wrap;
+		flex-direction: row;
+    }
+
+	.logo {
+		display: none;
+	}
+
+	.logo-mobile {
+		display: inline;
+	}
+
+	header div.mobile {
+		display: flex;
+		justify-content: center;
+	}
+
+	img.snip-header {
+		display: none;
+	}
+
+	div.services {
+		border: none;
+	}
+
+	footer {
+		align-items: flex-start;
+	}
+
+	footer p.copyright {
+		align-self: center;
+	}
+
+	p {
+		font-size: 55%;
+	}
+}
