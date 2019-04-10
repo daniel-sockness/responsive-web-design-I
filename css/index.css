@@ -1,3 +1,266 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+li {
+    font-size: 14px;
+    margin-left: 10px;
+    list-style-type: square;
+ }
+
+header nav{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 2%;
+}
+
+header nav a {
+	text-decoration: none;
+	color: gray;
+}
+
+.top-feature {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 200px;
+	padding-bottom: 100px;
+	border-bottom: 1px solid black;
+	margin-bottom: 50px;
+}
+
+.feature-text {
+	font-size: 75px;
+	text-align: center;
+}
+
+.get-started-btn {
+	width: 150px;
+	height: 40px;
+	border: 2px solid rgb(170, 107, 107);
+	background: transparent;
+	border-radius: 5px;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+	width: 400px;
+	font-size: 20px;
+}
+
+.middle-img {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.bottom-content {
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.bottom {
+	width: 300px;
+	font-size: 20px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-address {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
 
 
+div.services {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-bottom: 20px;
+	margin-top: 2%;
+	border-bottom: 2px solid black;
+}
+
+.title {
+	margin-top: 20px;
+	font-size: 50px;
+}
+
+p.services-info {
+	font-size: 26px;
+}
+
+div.information-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+.box {
+	border: 1px solid black;
+	width: 500px;
+	height: 204px;
+	margin-top: 20px;
+	display: flex;
+	padding: 12px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.box:last-child {
+	margin-bottom: 20px;
+}
+
+.learn-more-btn {
+	width: 50%;
+	background: transparent;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+div.facts {
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+div.info-facts {
+	width: 40%;
+}
+
+.services-info-img {
+	width: 30%;
+}
+
+ul {
+	margin-top: 5%;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+@media(max-width: 800px) {
+    header nav {
+		flex-wrap: wrap;
+		flex-direction: row;
+    }
+
+	.logo {
+		display: none;
+	}
+
+	.logo-mobile {
+		display: inline;
+	}
+
+	header div.mobile {
+		display: flex;
+		justify-content: center;
+	}
+
+	img.snip-header {
+		display: none;
+	}
+
+	div.services {
+		border: none;
+	}
+
+	footer {
+		align-items: flex-start;
+	}
+
+	footer p.copyright {
+		align-self: center;
+	}
+
+	p {
+		font-size: 55%;
+	}
+}
